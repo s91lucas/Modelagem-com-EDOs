@@ -80,7 +80,7 @@ plt.figure(figsize=(10, 6))
 # Dados Experimentais 
 plt.plot(t_experimental, q_experimental, 'o', label='Dados Experimentais', markersize=8, color='black')
 # Curva Ajustada 
-plt.plot(t_plot, q_plot, '-', label='Modelo PPO Ajustado', color='red', linewidth=2)
+plt.plot(t_plot, q_plot, '-', label=f'Modelo PPO Ajustado (R²={r_square: .5f})', color='red', linewidth=2)
 
 plt.title('Ajuste do Modelo de Pseudo-Primeira Ordem (PPO)')
 plt.xlabel('Tempo (min)')
