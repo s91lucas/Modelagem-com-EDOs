@@ -2,12 +2,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
-# --- 1. Dados Experimentais ---
-# 
+# --- Dados Experimentais ---
 t_experimental = np.array([0, 2, 5, 10, 15, 20, 30, 40, 50, 60, 90])
 q_experimental = np.array([0, 1.3990, 1.5189, 1.8487, 1.9986, 1.9886, 1.9187, 1.9487, 2.0386, 1.9986, 2.0186])
 
-# --- 2. Definição da Função do Modelo (PPO) ---
+# --- Definição da Função do Modelo (PPO)---
 def ppo_model(t, qe, k1):
     """
     Define a equação integrada do modelo de Pseudo-Primeira Ordem (PPO).
@@ -16,9 +15,9 @@ def ppo_model(t, qe, k1):
     # Usamos np.exp() para que funcione com arrays do numpy
     return qe * (1 - np.exp(-k1 * t))
 
-# --- 3. Otimização (Ajuste de Curva) ---
+# --- Otimização (Ajuste de Curva) ---
 # Chutes iniciais para [qe, k1]
-initial_guesses = [1.9, 0.5]
+initial_guesses = [2.0, 0.5]
 
 # 'curve_fit' encontra os melhores parâmetros (popt) e a matriz de covariância (pcov)
 popt, pcov = curve_fit(
