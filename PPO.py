@@ -11,7 +11,6 @@ q_experimental = np.array([0, 1.3990, 1.5189, 1.8487, 1.9986, 1.9886, 1.9187, 1.
 def ppo_model(t, qe, k1):
     """
     Define a equação integrada do modelo de Pseudo-Primeira Ordem (PPO).
-    Baseado na Equação (2) da sua imagem.
     """
     # qt = qe(1 - exp(-k1*t))
     # Usamos np.exp() para que funcione com arrays do numpy
