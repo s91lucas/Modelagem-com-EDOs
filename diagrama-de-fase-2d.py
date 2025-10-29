@@ -70,7 +70,7 @@ plt.tight_layout()
 plt.show()
 
 print(f"\n📊 PARÂMETROS USADOS:")
-print(f"q_max = {q_max:.4f} mg/g (do seu modelo PPO)")
+print(f"q_max = {q_max:.4f} mg/g (modelo PPO)")
 print(f"Ka = {Ka:.3f} L/mg·min (constante de adsorção)")
 print(f"Kd = {Kd:.3f} 1/min (constante de dessorção)")
 print(f"Razão Ka/Kd = {Ka/Kd:.3f} L/mg (afinidade)")
