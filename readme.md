@@ -14,7 +14,7 @@ Dados analisados
 | 40 | 1,9487 |
 | 50 | 2,0386 |
 | 60 | 1,9986 |
-| 90 | 2.0186 |
+| 90 | 2,0186 |
 
 Os dados descrevem um sistema de tratamento de efluentes utilizando o mecanismo de adsorção. Tabela fornecida por LABMARE UFAL.
 
@@ -23,6 +23,10 @@ Dados arbitrários:
 m = 50,0    Massa do adsorvente (mg)
 
 v = 100,0   Volume da solução (mL)
+
+qe = 2,0
+
+k1 = 0,5
 
 Os modelos conseguem reproduzir graficamente e com boa precisão ajustes de diagrama de fase 2D, equação de pseudo-primeira ordem e equação de pseudo-segunda ordem.
 
@@ -45,4 +49,5 @@ git clone <URL_DO_REPOSITORIO>
 ```bash
 pip install -r requirements.txt
 ```
+
 
